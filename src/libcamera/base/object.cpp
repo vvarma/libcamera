@@ -181,7 +181,7 @@ void Object::message(Message *msg)
 {
 	switch (msg->type()) {
 	case Message::InvokeMessage: {
-		InvokeMessage *iMsg = static_cast<InvokeMessage *>(msg);
+		InvokeMessage *iMsg = dynamic_cast<InvokeMessage *>(msg);
 		Semaphore *semaphore = iMsg->semaphore();
 		iMsg->invoke();
 
