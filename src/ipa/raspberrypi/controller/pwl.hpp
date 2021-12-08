@@ -9,7 +9,10 @@
 #include <math.h>
 #include <vector>
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wshadow"
 #include <boost/property_tree/ptree.hpp>
+#pragma GCC diagnostic pop
 
 namespace RPiController {
 

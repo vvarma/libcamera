@@ -118,6 +118,8 @@ add_project_link_arguments(cpp_arguments, language : 'cpp')
 
 libcamera_includes = include_directories('include')
 
+# Check for python installation.
+python_exe = find_program('python3')
 # Sub-directories fill py_modules with their dependencies.
 py_modules = []
 

@@ -2,4 +2,4 @@
 
 py_modules += ['jinja2']
 
-gen_tracepoints_header = find_program('./gen-tp-header.py')
+gen_tracepoints_header = files('./gen-tp-header.py')

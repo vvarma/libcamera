@@ -10,8 +10,11 @@
 #include "algorithm.hpp"
 #include "controller.hpp"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wshadow"
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/property_tree/ptree.hpp>
+#pragma GCC diagnostic pop
 
 using namespace RPiController;
 using namespace libcamera;

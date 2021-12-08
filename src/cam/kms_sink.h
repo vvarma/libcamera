@@ -48,7 +48,7 @@ private:
 	};
 
 	int configurePipeline(const libcamera::PixelFormat &format);
-	void requestComplete(DRM::AtomicRequest *request);
+	void requestComplete([[maybe_unused]] DRM::AtomicRequest *request);
 
 	DRM::Device dev_;
 
