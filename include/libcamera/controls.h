@@ -272,7 +272,7 @@ public:
 			     const ControlValue &def = 0);
 	explicit ControlInfo(Span<const ControlValue> values,
 			     const ControlValue &def = {});
-	explicit ControlInfo(std::set<bool> values, bool def);
+	explicit ControlInfo(const std::set<bool>& values, bool def);
 	explicit ControlInfo(bool value);
 
 	const ControlValue &min() const { return min_; }
